@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\AuthController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,4 +22,4 @@ use App\Http\Controllers\AuthController;
 
 
 Route::post('/user', [RegisterController::class, 'store']);
-Route::post('/login', [AuthController::class, 'login']);
+Route::post('/login', [LoginController::class, 'login']);

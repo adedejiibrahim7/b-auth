@@ -32,6 +32,7 @@ class RegisterController extends Controller
             ]
         )->latest()->first();
 
+
         $body = [
             'grant_type' => 'password',
             'client_id' => $oClient->id,
